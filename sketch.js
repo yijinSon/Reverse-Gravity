@@ -1,4 +1,5 @@
 var snowy = [];
+
 let naturalSound;
 
 function preload(){
@@ -6,8 +7,18 @@ function preload(){
   naturalSound = loadSound("City.mp3")
 }
 
+function playSound(){
+
+  if(mouseIsPressd==false){
+    naturalSound.play();
+  } else{
+    naturalSound.stop();
+    naturalSound.reverseBuffer();
+    naturalSound.play();
+  }
+}
+
 function setup() {
-  naturalSound.play();
   createCanvas(300, 500);
   for (let i=0 ; i<100 ; i++){
     snowy[i] = new Snow();
@@ -16,7 +27,6 @@ function setup() {
 
 function draw() {
     background(0);
-
   for (let i=0 ; i<snowy.length ; i++){
     snowy[i].update();
     snowy[i].display();
