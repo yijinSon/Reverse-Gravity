@@ -7,7 +7,7 @@ function preload(){
 }
 
 function setup() {
-  // naturalSound.play();
+  naturalSound.play();
   createCanvas(300, 500);
   for (let i=0 ; i<100 ; i++){
     snowy[i] = new Snow();
