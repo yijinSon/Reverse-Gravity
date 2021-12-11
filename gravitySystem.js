@@ -13,7 +13,7 @@ class gravitySystem{
 
   normalGravity(){
     this.vel.add(this.acc);
-    this.pos.add(tis.vel);
+    this.pos.add(this.vel);
   }
 
   reverseGravity(){
@@ -25,8 +25,9 @@ class gravitySystem{
     if(this.pos.y < this.size){
       this.vel.y = 0;
       this.acc.y = 0;
-      this.groundCheck = true;
+      this.gemdCheck = true;
     }
+  }
 
   sky(){
     if(this.pos.y > height-this.size){
@@ -35,4 +36,4 @@ class gravitySystem{
     this.skyCheck = true;
     }
   }
-}
+ }

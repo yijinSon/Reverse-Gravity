@@ -1,16 +1,16 @@
-class ball extends gravitySystem(){
+class ball extends gravitySystem{
 
   constructor(){
-    super(6);
+    super(10);
   }
 
   update(){
     if(clickCheck==false){
-      normalGravity();
-      ground();
+      this.normalGravity();
+      this.ground();
     } else if (clickCheck==true) {
-      reverseGravity();
-      sky();
+      this.reverseGravity();
+      this.sky();
     }
   }
 

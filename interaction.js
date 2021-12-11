@@ -5,7 +5,7 @@ function mouseReleased(){
   clickCount += 1;
 }
 
-function clickCheck(){
+function checkClicked(){
   if (clickCount%2 == 0){
     clickCheck = true;
   } else if (clickCount%2 == 1) {
