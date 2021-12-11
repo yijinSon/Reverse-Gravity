@@ -9,7 +9,6 @@ class gravitySystem{
     this.acc = createVector(0,random(0.03,0.08));
     this.size = s;
 
-    this.groundCheck = false;
   }
 
   normalGravity(){

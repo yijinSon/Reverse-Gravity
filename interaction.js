@@ -1,7 +1,7 @@
-var clickCount = 1;
-var clickCheck = false;
+let clickCount = 1;
+let clickCheck = false;
 
-function mouseRelease(){
+function mouseReleased(){
   clickCount += 1;
 }
 
