@@ -18,5 +18,9 @@ function graphicBG(){
     if (angle < 3.13){
       angle += 0.01;
     }
+  } else if (clickCheck==false){
+    if (angle > 0){
+      angle -= 0.01;
+    }
   }
 }
