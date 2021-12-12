@@ -20,20 +20,20 @@ class gravitySystem {
   }
 
   ground() {
-    if (this.pos.y > height - this.size && this.skyCheck == true) {
+    if (this.pos.y > height - this.size && this.groundCheck == false) {
       this.vel.y = 0;
       this.acc.y = 0;
-      this.groundCheck = true;
-      this.skyCheck = false;
+      // this.groundCheck = true;
+      // this.skyCheck = false;
     }
   }
 
   sky() {
-    if (this.pos.y < this.size && this.groundCheck == true) {
+    if (this.pos.y < this.size && this.skyCheck == false) {
       this.vel.y = 0;
       this.acc.y = 0;
-      this.skyCheck = true;
-      this.groundCheck = false;
+      // this.skyCheck = true;
+      // this.groundCheck = false;
     }
   }
 }

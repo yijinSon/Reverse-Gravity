@@ -14,4 +14,12 @@ function checkClicked(){
   } else if (clickCount%2 == 1) {
     clickCheck = false;
   }
+
+  if (clickCheck == false){
+    testBall.groundCheck = false;
+    testBall.skyCheck = true;
+  } else if (clickCheck == true){
+    testBall.skyCheck = false;
+    testBall.groundCheck = true;
+  }
 }
