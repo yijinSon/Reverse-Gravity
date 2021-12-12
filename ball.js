@@ -4,14 +4,14 @@ class ball extends gravitySystem{
     super(10);
   }
 
-  update(){
-    if(clickCheck==false){
+  normal(){
       this.normalGravity();
       this.ground();
-    } else if (clickCheck==true) {
+  }
+
+  reverse(){
       this.reverseGravity();
       this.sky();
-    }
   }
 
   display(){

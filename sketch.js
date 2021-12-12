@@ -8,6 +8,14 @@ function setup() {
 function draw() {
     background(0);
 
-    testBall.update();
+    checkClicked();
+
+    if (clickCheck==false){
+      testBall.normal();
+    } else if (clickCheck==true){
+      testBall.reverse();
+    }
+
+
     testBall.display();
 }
