@@ -1,4 +1,4 @@
-let testBall;
+let balls = [];
 let rotateBack;
 
 function setup() {
@@ -6,7 +6,9 @@ function setup() {
   rotateBack = createGraphics(width, height);
   rotateBack.background(10);
 
-  testBall = new ball();
+  for(let i=0 ; i<10 ; i++){
+    balls[i] = new ball();
+  }
 }
 
 function draw() {
@@ -15,12 +17,13 @@ function draw() {
 
   checkClicked();
 
-  if (clickCheck == false) {
-    testBall.normal();
-  } else if (clickCheck == true) {
-    testBall.reverse();
+  for (let i=0 ; i<balls.length ; i++){
+    if (clickCheck == false) {
+      balls[i].normal();
+    } else if (clickCheck == true) {
+      balls[i].reverse();
+    }
+      balls[i].display();
   }
-
-  testBall.display();
 
 }
