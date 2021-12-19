@@ -20,7 +20,7 @@ class gravitySystem {
   }
 
   ground() {
-    if (this.pos.y > height - this.size && this.groundCheck == false) {
+    if (this.pos.y > height - this.size/2 && this.groundCheck == false) {
       this.vel.y = 0;
       this.acc.y = 0;
       // this.groundCheck = true;
@@ -29,7 +29,7 @@ class gravitySystem {
   }
 
   sky() {
-    if (this.pos.y < this.size && this.skyCheck == false) {
+    if (this.pos.y < this.size/2 && this.skyCheck == false) {
       this.vel.y = 0;
       this.acc.y = 0;
       // this.skyCheck = true;

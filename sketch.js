@@ -2,7 +2,7 @@ let testBall;
 let rotateBack;
 
 function setup() {
-  createCanvas(300, 500);
+  createCanvas(800, 1000);
   rotateBack = createGraphics(width, height);
   rotateBack.background(10);
 
