@@ -38,4 +38,10 @@ function checkClicked(){
     roundBlocks[i].groundCheck = true;
   }
  }
+
+ if(clickCheck == false){
+   normalSound();
+ } else if (clickCheck == true){
+   weirdSound();
+ }
 }

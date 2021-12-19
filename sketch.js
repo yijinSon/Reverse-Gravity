@@ -2,9 +2,11 @@ let balls = [];
 let blocks = [];
 let roundBlocks = [];
 let rotateBack;
-let cityImg;
+let cityImg, citySound;
 
 function preload(){
+  soundFormats('mp3');
+  citySound = loadSound('City.mp3')
   cityImg = loadImage('city_img.png');
 }
 
@@ -18,8 +20,6 @@ function setup() {
     blocks[i] = new block();
     roundBlocks[i] = new roundBlock();
   }
-
-
 }
 
 function draw() {
