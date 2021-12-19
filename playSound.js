@@ -12,8 +12,6 @@ function weirdSound(){
 }
 
 function soundChange(){
-  citySound.setVolume(normalVolume);
-  citySound2.setVolume(weirdVolume);
 
   if(clickCheck == false){
     if (normalVolume<1){
@@ -27,6 +25,7 @@ function soundChange(){
     } else {
       weirdVolume = 0;
     }
+
   } else if (clickCheck == true){
     if (normalVolume>0){
       normalVolume -= 0.1;
@@ -39,4 +38,7 @@ function soundChange(){
       weirdVolume = 1;
     }
   }
+
+  citySound.setVolume(normalVolume);
+  citySound2.setVolume(weirdVolume);
 }
