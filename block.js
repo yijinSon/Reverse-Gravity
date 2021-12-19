@@ -1,7 +1,7 @@
-class ball extends gravitySystem{
+class block extends gravitySystem{
 
   constructor(){
-    super(random(50,80));
+    super(random(5,10));
   }
 
   normal(){
@@ -18,7 +18,6 @@ class ball extends gravitySystem{
     fill(255,150);
     strokeWeight(1);
     stroke(0);
-    ellipseMode(CENTER);
-    ellipse(this.pos.x, this.pos.y, this.size, this.size);
+    rect(this.pos.x, this.pos.y, this.size*2, this.size*2);
   }
 }

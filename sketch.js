@@ -1,4 +1,5 @@
 let balls = [];
+let blocks = [];
 let rotateBack;
 
 function setup() {
@@ -8,6 +9,10 @@ function setup() {
 
   for(let i=0 ; i<10 ; i++){
     balls[i] = new ball();
+  }
+
+  for(let i=0 ; i<10 ; i++){
+    blocks[i] = new block();
   }
 }
 
@@ -23,6 +28,15 @@ function draw() {
       balls[i].reverse();
     }
       balls[i].display();
+  }
+
+  for (let i=0 ; i<blocks.length ; i++){
+    if (clickCheck == false) {
+      blocks[i].normal();
+    } else if (clickCheck == true) {
+      blocks[i].reverse();
+    }
+      blocks[i].display();
   }
 
 }
