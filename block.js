@@ -1,7 +1,7 @@
 class block extends gravitySystem{
 
   constructor(){
-    super(random(5,10));
+    super(random(30,40));
   }
 
   normal(){
@@ -18,6 +18,7 @@ class block extends gravitySystem{
     fill(255,150);
     strokeWeight(1);
     stroke(0);
+    rectMode(CENTER);
     rect(this.pos.x, this.pos.y, this.size*2, this.size*2);
   }
 }

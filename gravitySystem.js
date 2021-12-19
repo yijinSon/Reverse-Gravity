@@ -5,7 +5,7 @@ class gravitySystem {
 
     this.pos = createVector(random(width), 0);
     this.vel = createVector(0, 0);
-    this.acc = createVector(0, random(0.03, 0.08));
+    this.acc = createVector(0, random(0.03, 0.05));
     this.size = s;
   }
 
