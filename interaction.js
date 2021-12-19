@@ -7,6 +7,7 @@ function mouseReleased(){
 for (let i=0 ; i<balls.length ; i++) {
   balls[i].acc = createVector(0, random(0.03, 0.05));
   blocks[i].acc = createVector(0, random(0.03, 0.05));
+  roundBlocks[i].acc = createVector(0, random(0.03, 0.05));
 }
 
 
@@ -26,11 +27,15 @@ function checkClicked(){
     balls[i].skyCheck = true;
     blocks[i].groundCheck = false;
     blocks[i].skyCheck = true;
+    roundBlocks[i].groundCheck = false;
+    roundBlocks[i].skyCheck = true;
   } else if (clickCheck == true){
     balls[i].skyCheck = false;
     balls[i].groundCheck = true;
     blocks[i].skyCheck = false;
     blocks[i].groundCheck = true;
+    roundBlocks[i].skyCheck = false;
+    roundBlocks[i].groundCheck = true;
   }
  }
 }

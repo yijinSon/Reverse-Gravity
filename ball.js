@@ -1,7 +1,7 @@
 class ball extends gravitySystem{
 
   constructor(){
-    super(random(50,80));
+    super(random(50,100));
   }
 
   normal(){

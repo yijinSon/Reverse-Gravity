@@ -1,7 +1,7 @@
-class block extends gravitySystem{
+class roundBlock extends gravitySystem{
 
   constructor(){
-    super(random(50,100));
+    super(random(100,200));
   }
 
   normal(){
@@ -15,10 +15,10 @@ class block extends gravitySystem{
   }
 
   display(){
-    fill(150,150);
+    fill(30,150);
     strokeWeight(1);
     stroke(0);
     rectMode(CENTER);
-    rect(this.pos.x, this.pos.y, this.size*2, this.size*2);
+    rect(this.pos.x, this.pos.y, this.size*2, this.size*2, 50);
   }
 }
