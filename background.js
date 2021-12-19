@@ -8,6 +8,7 @@ function graphicBG(){
   imageMode(CENTER);
   image(rotateBack,0,0);
 
+  angleMode(DEGREES)
   push();
   translate(width/2, height/2);
   rotate(angle);
@@ -15,12 +16,12 @@ function graphicBG(){
   pop();
 
   if (clickCheck==true){
-    if (angle < 3.13){
-      angle += 0.01;
+    if (angle < 180){
+      angle += 3;
     }
   } else if (clickCheck==false){
     if (angle > 0){
-      angle -= 0.01;
+      angle -= 3;
     }
   }
 }
