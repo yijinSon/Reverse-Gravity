@@ -2,15 +2,21 @@ let balls = [];
 let blocks = [];
 let roundBlocks = [];
 let rotateBack;
-let cityImg, citySound;
+let cityImg, citySound, citySound2;
+let normalVolume = 1;
+let weirdVolume = 0;
 
 function preload(){
   soundFormats('mp3');
   citySound = loadSound('City.mp3')
+  citySound2 = loadSound('City.mp3')
   cityImg = loadImage('city_img.png');
 }
 
 function setup() {
+  normalSound();
+  weirdSound();
+
   createCanvas(800, 1000);
   rotateBack = createGraphics(width, height);
   rotateBack.background(10);
@@ -23,6 +29,7 @@ function setup() {
 }
 
 function draw() {
+  soundChange();
   background(0);
   graphicBG();
   checkClicked();
@@ -41,5 +48,4 @@ function draw() {
       blocks[i].display();
       roundBlocks[i].display();
   }
-
 }
