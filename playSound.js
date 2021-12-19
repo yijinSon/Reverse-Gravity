@@ -1,17 +1,20 @@
 function normalSound(){
   // citySound.play();
   citySound.loop();
-  citySound.setVolume(normalVolume);
+
 }
 
 function weirdSound(){
   citySound2.reverseBuffer();
   // citySound2.play();
   citySound2.loop();
-  citySound2.setVolume(weirdVolume);
+
 }
 
 function soundChange(){
+  citySound.setVolume(normalVolume);
+  citySound2.setVolume(weirdVolume);
+
   if(clickCheck == false){
     if (normalVolume<1){
       normalVolume += 0.1;
