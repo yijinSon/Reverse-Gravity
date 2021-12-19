@@ -4,7 +4,7 @@ let clickCheck = false;
 function mouseReleased(){
   clickCount += 1;
 
-  testBall.acc = createVector(0, random(0.03, 0.08));
+  balls.acc = createVector(0, random(0.03, 0.08));
 
 }
 
@@ -16,10 +16,10 @@ function checkClicked(){
   }
 
   if (clickCheck == false){
-    testBall.groundCheck = false;
-    testBall.skyCheck = true;
+    balls.groundCheck = false;
+    balls.skyCheck = true;
   } else if (clickCheck == true){
-    testBall.skyCheck = false;
-    testBall.groundCheck = true;
+    balls.skyCheck = false;
+    balls.groundCheck = true;
   }
 }

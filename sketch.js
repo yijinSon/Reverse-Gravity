@@ -14,7 +14,6 @@ function setup() {
 function draw() {
   background(0);
   graphicBG();
-
   checkClicked();
 
   for (let i=0 ; i<balls.length ; i++){
