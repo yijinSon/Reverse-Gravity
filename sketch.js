@@ -2,6 +2,11 @@ let balls = [];
 let blocks = [];
 let roundBlocks = [];
 let rotateBack;
+let cityImg;
+
+function preload(){
+  cityImg = loadImage('city_img.png');
+}
 
 function setup() {
   createCanvas(800, 1000);

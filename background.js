@@ -1,18 +1,16 @@
 let angle =0;
 
 function graphicBG(){
-  rotateBack.fill(50);
-  rotateBack.noStroke();
-  rotateBack.rect(0,0,width,200);
+  // rotateBack.img(cityImg, 0, 0);
 
   imageMode(CENTER);
-  image(rotateBack,0,0);
+  image(cityImg,-width,-height, width*2, height*2);
 
   angleMode(DEGREES)
   push();
   translate(width/2, height/2);
   rotate(angle);
-  image(rotateBack,0,0);
+  image(cityImg,0,0);
   pop();
 
   if (clickCheck==true){
