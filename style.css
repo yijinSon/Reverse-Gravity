@@ -23,19 +23,31 @@ body {
 }
 
 .detail {
-  padding-left: 60px;
+  padding-left: 90px;
   line-height: 15px;
   position: relative;
-  text-align: justify;
+  text-align: center;
   font-family: "Nanum Gothic", sans-serif;
 
   font-size: 14px;
   width : 600px;
-  top : 1040px;
+  top : 1060px;
 }
+
+.info {
+  position : fixed;
+  font-weight: bold;
+  line-height: 10px;
+  font-size: 12px;
+  font-family: "Nanum Gothic", sans-serif;
+  text-align: left;
+  top : 950px;
+  left: 30px;
+}
+
 
 canvas {
   position: relative;
   margin : 0px;
-  top : 5px;
+  top : -100px;
 }
